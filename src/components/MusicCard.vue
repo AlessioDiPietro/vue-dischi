@@ -1,6 +1,12 @@
 <template>
   <div class="card">
       <img :src="info.poster" :alt="info.title">
+      <h3>{{info.title}}</h3>
+
+      <div class="sub-info">
+          <h5>{{info.author}}</h5>
+          <h6>{{info.year}}</h6>
+      </div>
 
   </div>
 </template>
@@ -17,7 +23,18 @@ export default {
     .card {
         background-color: $bgcSpotLight;
         width: 100%;
-        height: 360px;
+        height: 460px;
+        padding: 15px;
+        color: white;
+
+        h3 {
+            font-weight: bolder;
+            margin: 15px;
+        }
+        .sub-info {
+            color: grey;
+            font-size: 15px;
+        }
     }
 
 
