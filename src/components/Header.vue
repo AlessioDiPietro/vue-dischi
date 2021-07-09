@@ -1,12 +1,17 @@
 <template>
-  <nav>
+  <nav class="d-flex justify-content-between">
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="#">
+      <SearchBar/>
   </nav>
 </template>
 
 <script>
+import SearchBar from "@/components/SearchBar.vue"
 export default {
-    name: "header"
+    name: "header",
+    components:{
+        SearchBar,
+    }
 
 }
 </script>
