@@ -1,7 +1,8 @@
 <template>
   <main>
       <div class="box p-5 text-center">
-          <SearchBar @kind="filterKind"/>
+          
+        <SearchBar @kind="filterKind"/>
 
         <div class="row d-flex justify-content-center" v-if="!loadStep">
 
